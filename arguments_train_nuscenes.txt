@@ -1,0 +1,33 @@
+--mode train
+--model_name CaFNet
+--main_path /home/sfusion/users/huawei/radar-camera-fusion-depth/
+--train_image_path /home/sfusion/users/huawei/radar-camera-fusion-depth//training/nuscenes/nuscenes_train_image.txt
+--train_radar_path /home/sfusion/users/huawei/radar-camera-fusion-depth//training/nuscenes/nuscenes_train_radar_new.txt
+--train_ground_truth_path /home/sfusion/users/huawei/radar-camera-fusion-depth//training/nuscenes/nuscenes_train_ground_truth_interp.txt
+--train_box_pos_path /home/sfusion/users/huawei/radar-camera-fusion-depth//training/nuscenes/nuscenes_train_box_pos.txt
+--test_image_path /home/sfusion/users/huawei/radar-camera-fusion-depth/validation/nuscenes/nuscenes_val_image.txt
+--test_radar_path /home/sfusion/users/huawei/radar-camera-fusion-depth/validation/nuscenes/nuscenes_val_radar_new.txt
+--test_ground_truth_path /home/sfusion/users/huawei/radar-camera-fusion-depth/validation/nuscenes/nuscenes_val_lidar.txt
+--encoder resnet34_bts
+--encoder_radar resnet18
+--radar_input_channels 4
+--max_dist_correspondence 0.4
+--patch_size 50 150
+--batch_size 8
+--num_epochs 200
+--learning_rate 1e-4
+--weight_decay 1e-4
+--reg_loss l1
+--w_smoothness 0.001
+--adam_eps 1e-2
+--num_threads 8
+--input_height 352
+--input_width 704
+--max_depth 100
+--log_directory ./saved_models/
+--log_freq 100
+--do_online_eval
+--eval_freq 5
+--min_depth_eval 1e-3
+--max_depth_eval 80
+--eval_summary_directory ./saved_models/eval/

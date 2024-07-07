@@ -1,0 +1,11 @@
+--main_path /home/sfusion/users/huawei/radar-camera-fusion-depth/
+--test_image_path /home/sfusion/users/huawei/radar-camera-fusion-depth/testing/nuscenes/nuscenes_test_image.txt
+--test_radar_path /home/sfusion/users/huawei/radar-camera-fusion-depth/testing/nuscenes/nuscenes_test_radar_new.txt
+--test_ground_truth_path /home/sfusion/users/huawei/radar-camera-fusion-depth/testing/nuscenes/nuscenes_test_lidar.txt
+--encoder resnet34_bts
+--encoder_radar resnet18
+--radar_input_channels 4
+--max_depth 100
+--checkpoint_path ./saved_models/CaFNet/model-435000-best_mae_2.09121
+--max_depth_eval 80
+--store_prediction
