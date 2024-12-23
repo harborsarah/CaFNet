@@ -56,9 +56,14 @@ To train CaFNet on the nuScenes dataset, you may run
 python main.py arguments_train_nuscenes.txt
 ```
 
+## Download trained model
+You can download the model weights from the link: [model](https://drive.google.com/file/d/19_XCK8ryFZsEaqVrMt4Yoc8TQHz8OVsX/view?usp=drive_link).
+
+After downloading the model, put the file into the folder 'saved_models'. Then, it is able to evaluate the model.
+
 ## Evaluating CaFNet
 
-To evaluate model on the nuScenes dataset, you may run:
+To evaluate the model on the nuScenes dataset, you may run:
 
 ```
 python test.py arguments_test_nuscenes.txt
