@@ -25,11 +25,11 @@ TEST_REF_DIRPATH = os.path.join('testing', 'nuscenes')
 
 
 TEST_RADAR_NEW_FILEPATH = os.path.join(
-    TRAIN_REF_DIRPATH, 'nuscenes_test_radar_new.txt')
+    TEST_REF_DIRPATH, 'nuscenes_test_radar_new.txt')
 TEST_RADAR_REPROJECTED_NEW_FILEPATH = os.path.join(
-    TRAIN_REF_DIRPATH, 'nuscenes_test_radar_reprojected_new.txt')
+    TEST_REF_DIRPATH, 'nuscenes_test_radar_reprojected_new.txt')
 TEST_BOX_POS_FILEPATH = os.path.join(
-    TRAIN_REF_DIRPATH, 'nuscenes_test_box_pos.txt')
+    TEST_REF_DIRPATH, 'nuscenes_test_box_pos.txt')
 
 '''
 Set up input arguments

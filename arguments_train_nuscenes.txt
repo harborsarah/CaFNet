@@ -27,7 +27,7 @@
 --log_directory ./saved_models/
 --log_freq 100
 --do_online_eval
---eval_freq 5
+--eval_freq 5000
 --min_depth_eval 1e-3
 --max_depth_eval 80
 --eval_summary_directory ./saved_models/eval/
